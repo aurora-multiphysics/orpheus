@@ -28,7 +28,7 @@ ALL_MODULES                 := no
 
 CHEMICAL_REACTIONS          := no
 CONTACT                     := no
-ELECTROMAGNETICS            := no
+ELECTROMAGNETICS            := yes
 EXTERNAL_PETSC_SOLVER       := no
 FLUID_PROPERTIES            := no
 FSI                         := no
