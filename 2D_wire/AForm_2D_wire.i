@@ -1,7 +1,7 @@
   [Mesh]
     [wire]
       type = FileMeshGenerator 
-      file = wire_normal.e
+      file = 2D_wire.e
     []
   []
   
