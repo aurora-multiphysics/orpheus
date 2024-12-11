@@ -11,7 +11,7 @@
       top_boundary = top
       bottom_boundary = bottom
       x_tiles = 1
-      y_tiles = 1   #change to number of turns in coil
+      y_tiles = 3   #change to number of turns in coil
     []
     coord_type = rz
     rz_coord_axis = y
