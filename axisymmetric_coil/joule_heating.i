@@ -29,19 +29,12 @@
     [electric_potential]
       type = ADHeatConduction
       variable = elec
-      thermal_conductivity = 0.025 # air in W/(m K)
+      thermal_conductivity = 397.48 # copper in W/(m K)
       block = 2
-    []
-    [body_force]
-      type = ADBodyForce
-      variable = T
-      block = 2
-      value = 0
     []
     [heat_conduction]
       type = ADHeatConductionTimeDerivative
       variable = T
-      block = 1
     []
   []
   
@@ -69,17 +62,29 @@
   []
   
   [Materials]
-    [cp]
+    [cp_air]
       type = ADGenericConstantMaterial
       prop_names = 'specific_heat'
       prop_values = '1000' #air in J/(kg K)
       block = 1
     []
-    [rho]
+    [rho_air]
       type = ADGenericConstantMaterial
       prop_names = 'density'
       prop_values = '1.293' #air in kg/(m^3)
       block = 1
+    []
+    [cp_copper]
+      type = ADGenericConstantMaterial
+      prop_names = 'specific_heat'
+      prop_values = '385.0' #copper in J/(kg K)
+      block = 2
+    []
+    [rho_copper]
+      type = ADGenericConstantMaterial
+      prop_names = 'density'
+      prop_values = '8920.0' #copper in kg/(m^3)
+      block = 2
     []
     [sigma] #copper is default material
       type = ADElectricalConductivity
