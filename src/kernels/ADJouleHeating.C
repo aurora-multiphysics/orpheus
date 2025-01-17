@@ -20,7 +20,7 @@ ADJouleHeating::validParams()
   params.addParam<MaterialPropertyName>(
       "resistivity",
       1.77e-8,
-      "Material property providing electrical conductivity of the material.");
+      "Material property providing resistivity of the material.");
   params.addClassDescription("Calculates the heat source term corresponding to Joule "
                              "heating, with Jacobian contributions calculated using the automatic "
                              "differentiation system.");
@@ -30,7 +30,7 @@ ADJouleHeating::validParams()
 ADJouleHeating::ADJouleHeating(const InputParameters & parameters)
   : ADKernelValue(parameters),
     _current_density(getFunction("current_density")),
-    _resistivity(getADMaterialProperty<Real>("resistivity"))
+    _resistivity(getADMaterialProperty<Real>("resistivity")) 
 {
 } 
 

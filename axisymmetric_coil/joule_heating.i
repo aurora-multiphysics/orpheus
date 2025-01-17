@@ -93,6 +93,11 @@
       prop_values = '8920.0' #copper in kg/(m^3)
       block = 2
     []
+    [resistivity_copper]
+      type = ADResistivity 
+      temperature = T
+      block = 2
+    []
   []
 
   [Functions]
