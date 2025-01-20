@@ -1,0 +1,8 @@
+[Tests]
+  [test]
+    type = 'Exodiff'
+    input = 'resistivity_test.i'
+    exodiff = 'resistivity_test_out.e'
+  []
+[]
+
