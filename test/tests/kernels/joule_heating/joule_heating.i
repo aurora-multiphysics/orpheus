@@ -1,7 +1,7 @@
 [Mesh]
     [coil]
       type = FileMeshGenerator 
-      file = axi_coil.e
+      file = joule_heating_mesh.e
     []
     coord_type = rz
     rz_coord_axis = y

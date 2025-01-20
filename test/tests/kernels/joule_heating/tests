@@ -1,0 +1,8 @@
+[Tests]
+  [test]
+    type = 'Exodiff'
+    input = 'joule_heating.i'
+    exodiff = 'joule_heating_out.e'
+    requirement = 'The system shall be able to solve a 2D axisymmetric Joule heating problem.'
+  []
+[]
