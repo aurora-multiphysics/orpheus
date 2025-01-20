@@ -37,6 +37,7 @@
       type = ADJouleHeating #calculates Q = rho*J^2
       block = 2 #only the wire undergoes Joule heating due to presence of current density 
       variable = T
+      resistivity = resistivity
       current_density = J
     []
     [heat_conduction_tdot]
@@ -171,6 +172,14 @@
       type = ADGenericConstantMaterial
       prop_names = 'density'
       prop_values = '8920.0' #copper in kg/(m^3)
+      block = 2
+    []
+    [resistivity_copper]
+      type = ADResistivity 
+      temperature = T
+      reference_resistivity = 1.68e-8
+      temperature_coefficient = 0.00386
+      reference_temperature = 293.0
       block = 2
     []
   []

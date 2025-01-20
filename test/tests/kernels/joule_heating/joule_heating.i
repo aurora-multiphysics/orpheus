@@ -16,6 +16,7 @@
       type = ADJouleHeating #calculates Q = rho*J^2
       block = 2 #only the wire undergoes Joule heating due to presence of current density 
       variable = T
+      resistivity = resistivity
       current_density = J
     []
     [heat_conduction_tdot]
