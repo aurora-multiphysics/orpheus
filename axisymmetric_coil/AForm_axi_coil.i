@@ -1,7 +1,7 @@
   [Mesh]
     [coil]
       type = FileMeshGenerator 
-      file = axi_coil.e
+      file = joule_heating.e
     []
     [tmg]
       type = TiledMeshGenerator
@@ -24,7 +24,7 @@
   [Kernels]
     [laplacian_A] # d2A/dz2 = 0
       type = ADDiffusion
-      variable = A
+      variable = A 
     []
     [body_force] # d2A/dz2 = J*mu_0
       type = ADBodyForce
@@ -105,7 +105,7 @@
       type = ParsedFunction
       expression = 'J'
       symbol_names = 'J'
-      symbol_values = '50'
+      symbol_values = '1e8'
     []
   []
   
